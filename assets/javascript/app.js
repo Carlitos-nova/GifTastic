@@ -28,7 +28,7 @@ var createGifs = function(item){
         $(".btn-danger").removeClass("btn-danger");
         $(this).addClass("btn-danger");
             
-        queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=0AR5GTU0DNZHFiBV0ghK6NtQGow2DgcY&limit=20";
+        queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=0AR5GTU0DNZHFiBV0ghK6NtQGow2DgcY&limit=10";
 
         $.ajax({
         url: queryURL,
@@ -65,7 +65,7 @@ var createGifs = function(item){
     });
 
         if (cantExist){
-            queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=0AR5GTU0DNZHFiBV0ghK6NtQGow2DgcY&limit=20";
+            queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=0AR5GTU0DNZHFiBV0ghK6NtQGow2DgcY&limit=10";
 
                 $.ajax({
                 url: queryURL,
